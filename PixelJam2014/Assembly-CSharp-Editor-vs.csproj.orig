@@ -78,6 +78,16 @@
      <None Include="Assets\JMO Assets\MatCap Shaders\Textures\BenSimonds\_Textures Readme.txt" />
      <None Include="Assets\JMO Assets\MatCap Shaders\_MatCap Shaders Readme.txt" />
      <None Include="Assets\Shaders\alpha_2sided.shader" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>C:/Users/Slorthe/Documents/GitHub/PixelJam2014/PixelJam2014/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+ <Reference Include="Assembly-UnityScript">
+<<<<<<< HEAD
+ <HintPath>F:/code/PixelJam2014/PixelJam2014/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+=======
+ <HintPath>C:/Users/Slorthe/Documents/GitHub/PixelJam2014/PixelJam2014/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
+>>>>>>> bd2fb0b091083e691d8181b784a3fff910c5f990
+ </Reference>
  <Reference Include="JMOAssets">
  <HintPath>C:/Users/Slorthe/Documents/GitHub/PixelJam2014/PixelJam2014/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
  </Reference>
@@ -89,14 +99,10 @@
  </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{21C72429-F1C2-AF76-BC6C-DA9587876944}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
-      <Project>{EF703943-86FA-B471-2A59-649F42AE2318}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{E2B231CC-B563-B8F3-AA17-4BB3D259C727}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
-    <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{21C72429-F1C2-AF76-BC6C-DA9587876944}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-CSharp-vs.csproj">
+      <Project>{E2B231CC-B563-B8F3-AA17-4BB3D259C727}</Project>      <Name>Assembly-CSharp-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -1,6 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MoveBackBase.cs">
+      <File FileName="Assets\Scripts\TopController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\TopController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\RobotHealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\BottomControls.cs" Line="133" Column="9" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\Health.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\MoveBackBase.cs" Line="18" Column="69" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
