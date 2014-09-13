@@ -25,6 +25,7 @@ public class BottomControls : MonoBehaviour {
 		rigidbody.drag = 1f;
 		rigidbody.angularDrag = 1f;
 		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+
 	}
 
 	private float previous = 0;
@@ -100,8 +101,8 @@ public class BottomControls : MonoBehaviour {
 	public float v;
 	public float h;
 	public float maxVelocityChange = 10f;
-	public float turnSpeed = 5f;
-	public float speed = 500f;
+	public float turnSpeed = 75f;
+	public float speed = 7f;
 	public float maxVelocity = 10;
 	public float currentVelocity = 10;
 	public bool disabled = false;
