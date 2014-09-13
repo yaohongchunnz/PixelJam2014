@@ -13,6 +13,18 @@ public class BottomControls : MonoBehaviour {
 		if (playerNumber != 2 && playerNumber != 4) {
 			print ("Please set player number! 2 or 4");
 		}
+		if (name == "Player2") {
+						playerNumber = 2;
+			tag = "LeftTeamRobot";
+				} else if (name == "Player4") {
+			playerNumber=4;
+			tag = "RightTeamRobot";
+				}
+
+		gameObject.AddComponent<Rigidbody> ();
+		rigidbody.drag = 1f;
+		rigidbody.angularDrag = 1f;
+		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 	}
 
 	private float previous = 0;
@@ -172,9 +184,8 @@ public class BottomControls : MonoBehaviour {
 		//rigidbody.AddTorque (0, turnSpeed * h*Time.deltaTime, 0,ForceMode.Acceleration);
 	}
 
-	public void DisableRobot(string robot){
-		if (name == robot) {
+	public void DisableRobot(){
 			disabled = true;
-				}
+		print (name + " died");
 	}
 }
