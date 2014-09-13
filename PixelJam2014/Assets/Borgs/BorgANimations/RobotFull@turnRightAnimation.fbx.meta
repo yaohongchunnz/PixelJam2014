@@ -1,0 +1,601 @@
+fileFormatVersion: 2
+guid: a3d56471b9cf8714cb5403b5b7dd5efb
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: RobotFull:Chest
+    100002: RobotFull:Head
+    100004: RobotFull:Hips
+    100006: RobotFull:Jaw
+    100008: RobotFull:Left_arm
+    100010: RobotFull:Left_Foot
+    100012: RobotFull:LeftEye
+    100014: RobotFull:LeftForeArm
+    100016: RobotFull:LeftHand
+    100018: RobotFull:LeftHandEnd
+    100020: RobotFull:LeftLeg
+    100022: RobotFull:LeftShoulder
+    100024: RobotFull:LeftToes
+    100026: RobotFull:LeftUpLeg
+    100028: RobotFull:Neck
+    100030: RobotFull:nurbsCube1
+    100032: RobotFull:polySurface49
+    100034: RobotFull:polySurface50
+    100036: RobotFull:polySurface51
+    100038: RobotFull:polySurface52
+    100040: RobotFull:polySurface53
+    100042: RobotFull:polySurface54
+    100044: RobotFull:Right_arm
+    100046: RobotFull:Right_Foot
+    100048: RobotFull:RightEye
+    100050: RobotFull:RightForeArm
+    100052: RobotFull:RightHand
+    100054: RobotFull:RightHandEnd
+    100056: RobotFull:RightLeg
+    100058: RobotFull:RightShoulder
+    100060: RobotFull:RightToes
+    100062: RobotFull:RightUpLeg
+    100064: RobotFull:Spine
+    100066: //RootNode
+    400000: RobotFull:Chest
+    400002: RobotFull:Head
+    400004: RobotFull:Hips
+    400006: RobotFull:Jaw
+    400008: RobotFull:Left_arm
+    400010: RobotFull:Left_Foot
+    400012: RobotFull:LeftEye
+    400014: RobotFull:LeftForeArm
+    400016: RobotFull:LeftHand
+    400018: RobotFull:LeftHandEnd
+    400020: RobotFull:LeftLeg
+    400022: RobotFull:LeftShoulder
+    400024: RobotFull:LeftToes
+    400026: RobotFull:LeftUpLeg
+    400028: RobotFull:Neck
+    400030: RobotFull:nurbsCube1
+    400032: RobotFull:polySurface49
+    400034: RobotFull:polySurface50
+    400036: RobotFull:polySurface51
+    400038: RobotFull:polySurface52
+    400040: RobotFull:polySurface53
+    400042: RobotFull:polySurface54
+    400044: RobotFull:Right_arm
+    400046: RobotFull:Right_Foot
+    400048: RobotFull:RightEye
+    400050: RobotFull:RightForeArm
+    400052: RobotFull:RightHand
+    400054: RobotFull:RightHandEnd
+    400056: RobotFull:RightLeg
+    400058: RobotFull:RightShoulder
+    400060: RobotFull:RightToes
+    400062: RobotFull:RightUpLeg
+    400064: RobotFull:Spine
+    400066: //RootNode
+    2300000: RobotFull:polySurface49
+    2300002: RobotFull:polySurface50
+    2300004: RobotFull:polySurface51
+    2300006: RobotFull:polySurface52
+    3300000: RobotFull:polySurface49
+    3300002: RobotFull:polySurface50
+    3300004: RobotFull:polySurface51
+    3300006: RobotFull:polySurface52
+    4300000: RobotFull:polySurface53
+    4300002: RobotFull:polySurface54
+    4300004: RobotFull:polySurface50
+    4300006: RobotFull:polySurface49
+    4300008: RobotFull:polySurface51
+    4300010: RobotFull:polySurface52
+    7400000: turnRightAnimation
+    9500000: //RootNode
+    13700000: RobotFull:polySurface53
+    13700002: RobotFull:polySurface54
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: turnRightAnimation
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 1
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: RobotFull:Hips
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:LeftUpLeg
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:LeftUpLeg/RobotFull:LeftLeg
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:LeftUpLeg/RobotFull:LeftLeg/RobotFull:Left_Foot
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:LeftUpLeg/RobotFull:LeftLeg/RobotFull:Left_Foot/RobotFull:LeftToes
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:RightUpLeg
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:RightUpLeg/RobotFull:RightLeg
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:RightUpLeg/RobotFull:RightLeg/RobotFull:Right_Foot
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:RightUpLeg/RobotFull:RightLeg/RobotFull:Right_Foot/RobotFull:RightToes
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:LeftShoulder
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:LeftShoulder/RobotFull:Left_arm
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:LeftShoulder/RobotFull:Left_arm/RobotFull:LeftForeArm
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:LeftShoulder/RobotFull:Left_arm/RobotFull:LeftForeArm/RobotFull:LeftHand
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:LeftShoulder/RobotFull:Left_arm/RobotFull:LeftForeArm/RobotFull:LeftHand/RobotFull:LeftHandEnd
+        weight: 0
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:Neck
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:Neck/RobotFull:Head
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:Neck/RobotFull:Head/RobotFull:Jaw
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:Neck/RobotFull:Head/RobotFull:LeftEye
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:Neck/RobotFull:Head/RobotFull:RightEye
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:RightShoulder
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:RightShoulder/RobotFull:Right_arm
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:RightShoulder/RobotFull:Right_arm/RobotFull:RightForeArm
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:RightShoulder/RobotFull:Right_arm/RobotFull:RightForeArm/RobotFull:RightHand
+        weight: 1
+      - path: RobotFull:Hips/RobotFull:Spine/RobotFull:Chest/RobotFull:RightShoulder/RobotFull:Right_arm/RobotFull:RightForeArm/RobotFull:RightHand/RobotFull:RightHandEnd
+        weight: 0
+      - path: RobotFull:nurbsCube1
+        weight: 0
+      - path: RobotFull:polySurface49
+        weight: 0
+      - path: RobotFull:polySurface50
+        weight: 0
+      - path: RobotFull:polySurface51
+        weight: 0
+      - path: RobotFull:polySurface52
+        weight: 0
+      - path: RobotFull:polySurface53
+        weight: 0
+      - path: RobotFull:polySurface54
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: RobotFull:Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Left_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Right_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Chest
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Left_arm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Right_arm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftToes
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightToes
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:LeftEye
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:RightEye
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: RobotFull:Jaw
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: RobotFull@turnRightAnimation(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:nurbsCube1
+      position: {x: -1.63215486e-06, y: .00888958573, z: .000889430987}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: .434619635, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface49
+      position: {x: .00169583259, y: .00200152118, z: -.00233106362}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface50
+      position: {x: .00169583259, y: .00200152118, z: .00170371763}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface51
+      position: {x: -.0016769463, y: .00200152118, z: .00170371763}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface52
+      position: {x: -.0016769463, y: .00200152118, z: -.00233106362}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface53
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:polySurface54
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:Hips
+      position: {x: -5.17518583e-06, y: .00182414753, z: 0}
+      rotation: {x: -.704851329, y: .709355116, z: 4.34354823e-17, w: -4.31597036e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:Spine
+      position: {x: -.000970868452, y: 4.78898471e-07, z: 5.8648148e-23}
+      rotation: {x: .998782694, y: -.00334702549, z: .0492136516, w: .00016491914}
+      scale: {x: .999999881, y: .999999881, z: .999999702}
+      transformModified: 1
+    - name: RobotFull:Chest
+      position: {x: -.000869277224, y: 2.8935699e-07, z: -3.20122128e-21}
+      rotation: {x: -1.56608038e-12, y: -1.11354848e-09, z: 1.3968755e-11, w: 1}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: RobotFull:Neck
+      position: {x: -.00337997917, y: 3.94626204e-06, z: -1.80766792e-21}
+      rotation: {x: 1.72657177e-09, y: 2.3612674e-09, z: .0053277933, w: .999985814}
+      scale: {x: 1.00000012, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: RobotFull:Head
+      position: {x: -.00112373941, y: -5.70290316e-19, z: -3.8550397e-21}
+      rotation: {x: -.921763003, y: .387753695, z: -1.79219706e-09, w: 4.66215333e-09}
+      scale: {x: .999999523, y: .999999881, z: 1.00000012}
+      transformModified: 1
+    - name: RobotFull:RightEye
+      position: {x: -.000384180836, y: -1.01535212e-19, z: -6.63352452e-20}
+      rotation: {x: .382683367, y: -.923879564, z: 1.4261744e-09, w: 6.68019284e-09}
+      scale: {x: 1.00000036, y: .99999994, z: 1.00000048}
+      transformModified: 1
+    - name: RobotFull:LeftEye
+      position: {x: -8.7313827e-05, y: .000349255308, z: 8.83651457e-20}
+      rotation: {x: -2.14963491e-09, y: -2.47688425e-09, z: 4.71832484e-09, w: 1}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: RobotFull:Jaw
+      position: {x: -3.894373e-05, y: -3.894373e-05, z: -.000828759745}
+      rotation: {x: -2.14963491e-09, y: -2.47688425e-09, z: 4.71832484e-09, w: 1}
+      scale: {x: .99999994, y: .999999881, z: 1}
+      transformModified: 1
+    - name: RobotFull:LeftShoulder
+      position: {x: -.00333391386, y: -.00187467691, z: -4.61894656e-19}
+      rotation: {x: -3.51472251e-09, y: -1.13217313e-09, z: .747709274, w: .66402632}
+      scale: {x: .999999523, y: 1, z: .999999821}
+      transformModified: 1
+    - name: RobotFull:Left_arm
+      position: {x: -.00160444714, y: -9.71445151e-19, z: 0}
+      rotation: {x: 1.22972494e-06, y: -7.07665549e-06, z: -.0275074542, w: .99962163}
+      scale: {x: .999999821, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: RobotFull:LeftForeArm
+      position: {x: -.00135619997, y: -1.24900085e-18, z: 0}
+      rotation: {x: 1.62651318e-07, y: -9.64458422e-07, z: .00209193537, w: .999997854}
+      scale: {x: 1, y: 1.00000024, z: .99999994}
+      transformModified: 1
+    - name: RobotFull:LeftHand
+      position: {x: -.00324791134, y: 2.220446e-18, z: 0}
+      rotation: {x: 4.37480452e-09, y: 1.87316136e-08, z: .0111646783, w: .999937713}
+      scale: {x: 1, y: .999999762, z: .999999881}
+      transformModified: 1
+    - name: RobotFull:LeftHandEnd
+      position: {x: -.00257037207, y: 0, z: -4.3499345e-19}
+      rotation: {x: -4.90620522e-09, y: -2.15240323e-08, z: -.391706884, w: .92009002}
+      scale: {x: 1.00000036, y: .999999762, z: 1}
+      transformModified: 1
+    - name: RobotFull:RightShoulder
+      position: {x: -.00333265238, y: .0018768973, z: 4.56966779e-19}
+      rotation: {x: .747930288, y: .663777411, z: 9.63533253e-09, w: 1.16820331e-08}
+      scale: {x: .999999583, y: .999999762, z: .999999523}
+      transformModified: 1
+    - name: RobotFull:Right_arm
+      position: {x: .00160445145, y: 2.28897434e-08, z: 3.40303348e-16}
+      rotation: {x: -1.20729203e-06, y: 7.09897176e-06, z: -.0275038425, w: .999621749}
+      scale: {x: 1.00000048, y: .999999762, z: 1}
+      transformModified: 1
+    - name: RobotFull:RightForeArm
+      position: {x: .0013561931, y: -8.94427199e-09, z: 6.83279822e-12}
+      rotation: {x: -1.39026341e-07, y: 9.56951226e-07, z: .0020911817, w: .999997854}
+      scale: {x: 1.00000024, y: .999999523, z: .999999881}
+      transformModified: 1
+    - name: RobotFull:RightHand
+      position: {x: .00324789528, y: -1.53862061e-08, z: 3.60466241e-13}
+      rotation: {x: 8.99401442e-09, y: 7.13348536e-09, z: .0111647006, w: .999937654}
+      scale: {x: .99999994, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: RobotFull:RightHandEnd
+      position: {x: .00256963121, y: 7.6268384e-07, z: -2.40549898e-12}
+      rotation: {x: -4.67110866e-08, y: -2.46328042e-08, z: -.391706973, w: .920090079}
+      scale: {x: .999999523, y: 1.00000095, z: 1.00000024}
+      transformModified: 1
+    - name: RobotFull:LeftUpLeg
+      position: {x: 3.61745369e-05, y: .00183099578, z: 2.24232301e-19}
+      rotation: {x: 1.60002928e-22, y: 1.47981626e-20, z: .99993962, w: .0109963557}
+      scale: {x: .999999881, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: RobotFull:LeftLeg
+      position: {x: -.000880594889, y: 9.10729796e-20, z: -1.07841779e-19}
+      rotation: {x: -.999719739, y: -.023677431, z: -1.44946859e-18, w: -6.12299736e-17}
+      scale: {x: .99999994, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: RobotFull:Left_Foot
+      position: {x: -.000867166498, y: -2.17274105e-18, z: 1.06078191e-19}
+      rotation: {x: .498481214, y: .514557183, z: -.48543945, w: .501094818}
+      scale: {x: 1.00000012, y: .999999762, z: .999999702}
+      transformModified: 1
+    - name: RobotFull:LeftToes
+      position: {x: -.000659436337, y: -4.18017842e-19, z: 1.95156386e-19}
+      rotation: {x: -6.58909993e-09, y: -.716416478, z: -5.55934498e-09, w: .697672844}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: RobotFull:RightUpLeg
+      position: {x: 1.28477859e-05, y: -.00183130405, z: -2.24270067e-19}
+      rotation: {x: .999989271, y: .00462714909, z: 3.4475256e-11, w: 7.45050155e-09}
+      scale: {x: 1.00000024, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: RobotFull:RightLeg
+      position: {x: .000880597392, y: 7.65531549e-09, z: 1.14177566e-16}
+      rotation: {x: .999719679, y: .0236773491, z: 3.94662331e-10, w: 1.66636873e-08}
+      scale: {x: .999999762, y: 1.00000024, z: 1.00000024}
+      transformModified: 1
+    - name: RobotFull:Right_Foot
+      position: {x: .00086716644, y: 5.23545785e-09, z: -6.11483141e-13}
+      rotation: {x: .498481184, y: .514557123, z: -.48543945, w: .501094818}
+      scale: {x: .999999881, y: 1.00000012, z: .999999642}
+      transformModified: 1
+    - name: RobotFull:RightToes
+      position: {x: .000659436744, y: 1.110223e-18, z: -1.62845559e-09}
+      rotation: {x: -3.62286663e-08, y: -.716416478, z: 5.82781201e-09, w: .697672963}
+      scale: {x: .999999881, y: .999999762, z: .999999881}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
