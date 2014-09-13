@@ -50,12 +50,10 @@
      <Compile Include="Assets\Elementals\Scripts\TestParticles.cs" />
      <Compile Include="Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_AutoRotate.cs" />
      <Compile Include="Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
-     <Compile Include="Assets\Scripts\BottomControls.cs" />
+     <Compile Include="Assets\Scripts\BottomPlayerScripts\Proximity.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
-     <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
-     <Compile Include="Assets\Scripts\Proximity.cs" />
      <Compile Include="Assets\Scripts\RobotHealthBar.cs" />
      <Compile Include="Assets\Scripts\TopController.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />

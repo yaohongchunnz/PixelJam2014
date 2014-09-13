@@ -42,6 +42,9 @@ public class Health : MonoBehaviour {
 				} else if (name == "Player4") {
 			top = "Player3";
 				}
-		//GameObject robots = GameObject.FindGameObjectsWithTag ("LeftTeamRobot");
+		if (top != "") {
+			GameObject.Find (top).GetComponent<TopController>().DisableRobot();
+			GetComponent<BottomControls>().DisableRobot();
+		}
 	}
 }
