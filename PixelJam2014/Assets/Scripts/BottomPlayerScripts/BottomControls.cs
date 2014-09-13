@@ -15,6 +15,7 @@ public class BottomControls : MonoBehaviour {
 	public GameObject top;
 
 	public GameObject myGUI;
+
 	// Use this for initialization
 	void Start () {
 		if (playerNumber != 2 && playerNumber != 4) {
@@ -58,7 +59,7 @@ public class BottomControls : MonoBehaviour {
 
 
 	public float GetVertical(){
-		if(leftDirection == rightDirection || (leftDirection <0.2f && leftDirection > -0.2f &&rightDirection <0.2f && rightDirection>-0.2f)){
+		if((leftDirection <0.2f && leftDirection > -0.2f &&rightDirection <0.2f && rightDirection>-0.2f)){
 			return 0f;
 		}
 		if(leftDirection > 0.1f && rightDirection > 0.1f){
@@ -207,7 +208,8 @@ public class BottomControls : MonoBehaviour {
 			if(carryingBase){
 				myBase.BroadcastMessage("LaunchOff");
 				carryingBase=false;
-			print ("Combined!");
+				print ("Combined!");
+				rigidbody.mass = 2000f;
 			}
 
 				} else {

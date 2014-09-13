@@ -37,7 +37,7 @@ public class SimpleMovement : MonoBehaviour
 
 		if (falling) {
 			
-			transform.position = Vector3.Lerp(transform.position,connectionPoint.transform.position,Time.deltaTime*3);
+			transform.position = Vector3.Lerp(transform.position,connectionPoint.transform.position,Time.deltaTime*10);
 			transform.rotation = Quaternion.Slerp(transform.rotation, connectionPoint.transform.rotation,Time.deltaTime*1);
 				}
 		if (disabled)
@@ -83,7 +83,7 @@ public class SimpleMovement : MonoBehaviour
 		yield return new WaitForSeconds(2);
 		connecting = false;
 		falling = true;
-		yield return new WaitForSeconds(1.2f);
+		yield return new WaitForSeconds(0.4f);
 		GameObject.Find ("Player"+(playerNumber+1).ToString()).BroadcastMessage("EnableTop");
 
 		Destroy (this.gameObject);
