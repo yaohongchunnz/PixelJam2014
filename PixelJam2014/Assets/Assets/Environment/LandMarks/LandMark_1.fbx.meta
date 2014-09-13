@@ -99,6 +99,8 @@ ModelImporter:
     100186: transform58
     100188: transform59
     100190: transform60
+    100192: polySurface11
+    100194: polySurface14
     400000: //RootNode
     400002: pCube2
     400004: pCube37
@@ -195,6 +197,8 @@ ModelImporter:
     400186: transform58
     400188: transform59
     400190: transform60
+    400192: polySurface11
+    400194: polySurface14
     2300000: pCube2
     2300002: pCube37
     2300004: pCube38
@@ -234,6 +238,7 @@ ModelImporter:
     2300072: pCylinder9
     2300074: polySurface10
     2300076: polySurface4
+    2300078: polySurface14
     3300000: pCube2
     3300002: pCube37
     3300004: pCube38
@@ -273,6 +278,7 @@ ModelImporter:
     3300072: pCylinder9
     3300074: polySurface10
     3300076: polySurface4
+    3300078: polySurface14
     4300000: pCylinder9
     4300002: pCylinder10
     4300004: pCylinder16
@@ -312,6 +318,7 @@ ModelImporter:
     4300072: pCube67
     4300074: pCube68
     4300076: polySurface10
+    4300078: polySurface14
     7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
