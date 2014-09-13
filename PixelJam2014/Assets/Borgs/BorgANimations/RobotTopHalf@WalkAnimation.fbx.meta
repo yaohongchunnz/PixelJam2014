@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 492f4762437357f46ae639b861814552
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Chest
+    100002: Head
+    100004: Hips
+    100006: Jaw
+    100008: Left_arm
+    100010: Left_Foot
+    100012: LeftEye
+    100014: LeftForeArm
+    100016: LeftHand
+    100018: LeftHandEnd
+    100020: LeftLeg
+    100022: LeftShoulder
+    100024: LeftToes
+    100026: LeftUpLeg
+    100028: motionTrail1Handle
+    100030: motionTrail2Handle
+    100032: Neck
+    100034: nurbsCube1
+    100036: polySurface54
+    100038: Right_arm
+    100040: Right_Foot
+    100042: RightEye
+    100044: RightForeArm
+    100046: RightHand
+    100048: RightHandEnd
+    100050: RightLeg
+    100052: RightShoulder
+    100054: RightToes
+    100056: RightUpLeg
+    100058: //RootNode
+    100060: Spine
+    400000: Chest
+    400002: Head
+    400004: Hips
+    400006: Jaw
+    400008: Left_arm
+    400010: Left_Foot
+    400012: LeftEye
+    400014: LeftForeArm
+    400016: LeftHand
+    400018: LeftHandEnd
+    400020: LeftLeg
+    400022: LeftShoulder
+    400024: LeftToes
+    400026: LeftUpLeg
+    400028: motionTrail1Handle
+    400030: motionTrail2Handle
+    400032: Neck
+    400034: nurbsCube1
+    400036: polySurface54
+    400038: Right_arm
+    400040: Right_Foot
+    400042: RightEye
+    400044: RightForeArm
+    400046: RightHand
+    400048: RightHandEnd
+    400050: RightLeg
+    400052: RightShoulder
+    400054: RightToes
+    400056: RightUpLeg
+    400058: //RootNode
+    400060: Spine
+    4300000: polySurface54
+    7400000: WalkAnimation
+    9500000: //RootNode
+    13700000: polySurface54
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkAnimation
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0
+        functionName: NewEvent
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hips
+        weight: 1
+      - path: Hips/LeftUpLeg
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg/Left_Foot
+        weight: 1
+      - path: Hips/LeftUpLeg/LeftLeg/Left_Foot/LeftToes
+        weight: 1
+      - path: Hips/RightUpLeg
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg/Right_Foot
+        weight: 1
+      - path: Hips/RightUpLeg/RightLeg/Right_Foot/RightToes
+        weight: 1
+      - path: Hips/Spine
+        weight: 1
+      - path: Hips/Spine/Chest
+        weight: 1
+      - path: Hips/Spine/Chest/LeftShoulder
+        weight: 1
+      - path: Hips/Spine/Chest/LeftShoulder/Left_arm
+        weight: 1
+      - path: Hips/Spine/Chest/LeftShoulder/Left_arm/LeftForeArm
+        weight: 1
+      - path: Hips/Spine/Chest/LeftShoulder/Left_arm/LeftForeArm/LeftHand
+        weight: 1
+      - path: Hips/Spine/Chest/LeftShoulder/Left_arm/LeftForeArm/LeftHand/LeftHandEnd
+        weight: 1
+      - path: Hips/Spine/Chest/Neck
+        weight: 1
+      - path: Hips/Spine/Chest/Neck/Head
+        weight: 1
+      - path: Hips/Spine/Chest/Neck/Head/Jaw
+        weight: 1
+      - path: Hips/Spine/Chest/Neck/Head/LeftEye
+        weight: 1
+      - path: Hips/Spine/Chest/Neck/Head/RightEye
+        weight: 1
+      - path: Hips/Spine/Chest/RightShoulder
+        weight: 1
+      - path: Hips/Spine/Chest/RightShoulder/Right_arm
+        weight: 1
+      - path: Hips/Spine/Chest/RightShoulder/Right_arm/RightForeArm
+        weight: 1
+      - path: Hips/Spine/Chest/RightShoulder/Right_arm/RightForeArm/RightHand
+        weight: 1
+      - path: Hips/Spine/Chest/RightShoulder/Right_arm/RightForeArm/RightHand/RightHandEnd
+        weight: 1
+      - path: motionTrail1Handle
+        weight: 1
+      - path: motionTrail2Handle
+        weight: 1
+      - path: nurbsCube1
+        weight: 1
+      - path: polySurface54
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
