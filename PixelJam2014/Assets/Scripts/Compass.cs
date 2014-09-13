@@ -4,6 +4,7 @@ using System.Collections;
 public class Compass : MonoBehaviour {
 	//179
 	public Transform playerTop;
+	public Transform playerBottom;
 	public float angle;
 	public GameObject triangleTop;
 	public GameObject triangleBottom;
@@ -11,10 +12,12 @@ public class Compass : MonoBehaviour {
 	void Start () {
 		if (tag == "LeftTeam") {
 			playerTop = GameObject.Find ("Player1").transform;
+			playerBottom = GameObject.Find ("Player2").transform;
 			triangleTop = GameObject.Find("dynamicTopBlue");
 			triangleBottom = GameObject.Find("dynamicBottomBlue");
 		} else {
 			playerTop = GameObject.Find ("Player3").transform;
+			playerBottom = GameObject.Find ("Player4").transform;
 			triangleTop = GameObject.Find("dynamicTopRed");
 			triangleBottom = GameObject.Find("dynamicBottomRed");
 				}
@@ -22,8 +25,12 @@ public class Compass : MonoBehaviour {
 	
 	// Update is called once per frame
 	public float normalized;
+	public float anglebottom;
+	public float angletop;
 	void Update () {
-		angle = playerTop.eulerAngles.y;
+		angletop = playerTop.eulerAngles.y;
+		anglebottom = playerBottom.eulerAngles.y;
+		angle = (angletop - anglebottom);
 		if (angle < 180) {
 						normalized = ((angle / 179)/2f)+0.5f;
 				} else if (angle < 360) {
