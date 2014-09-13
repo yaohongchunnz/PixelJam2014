@@ -6,12 +6,6 @@ public class Proximity : MonoBehaviour {
 	public bool isInRange = false;
 	public int lookingFor;
 	void Start(){
-		if (transform.name == "Player2") {
-			lookingFor=1;
-		}
-		else if (transform.name == "Player4") {
-			lookingFor=3;
-		}
 	}
 	
 	void OnTriggerEnter(Collider other) {

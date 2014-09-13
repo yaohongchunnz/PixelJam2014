@@ -8,6 +8,13 @@ public class BottomControls : MonoBehaviour {
 	public float leftDirection = 0f;
 	public bool rightBoost = false;
 	public bool leftBoost = false;
+
+	public bool carryingBase = true;
+	
+	public GameObject myBase;
+	public GameObject top;
+
+	public GameObject myGUI;
 	// Use this for initialization
 	void Start () {
 		if (playerNumber != 2 && playerNumber != 4) {
@@ -189,5 +196,26 @@ public class BottomControls : MonoBehaviour {
 	public void DisableRobot(){
 			disabled = true;
 		print (name + " died");
+	}
+
+	public void Combine(string caller){
+		print ("Checking...!");
+		if (caller.Contains ("Player" + (playerNumber - 1).ToString ())) {
+			if(carryingBase){
+				myBase.transform.parent=null;
+				myBase.BroadcastMessage("LaunchOff");
+				carryingBase=false;
+			print ("Combined!");
+			}
+
+				} else {
+			//enemy has combined!
+				}
+	}
+	public void EnableTop(){
+
+		top.SetActive (true);
+		GameObject gui = Instantiate (myGUI) as GameObject;
+
 	}
 }
