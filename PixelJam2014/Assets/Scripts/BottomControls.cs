@@ -92,6 +92,7 @@ public class BottomControls : MonoBehaviour {
 	public float speed = 500f;
 	public float maxVelocity = 10;
 	public float currentVelocity = 10;
+	public bool disabled = false;
 	void FixedUpdate(){
 		v = GetVertical();
 		h = GetHorizontal();
@@ -142,6 +143,8 @@ public class BottomControls : MonoBehaviour {
 
 	void Move ()
 	{
+		if (disabled)
+						return;
 		Vector3 targetVelocity = new Vector3 (0, 0, v);
 		targetVelocity = transform.TransformDirection (targetVelocity);
 		if (v < 0) {
@@ -167,5 +170,11 @@ public class BottomControls : MonoBehaviour {
 		//rigidbody.rot(transform.up*turnSpeed*h, ForceMode.Acceleration);
 		rigidbody.MoveRotation (rigidbody.rotation * deltaRotation);
 		//rigidbody.AddTorque (0, turnSpeed * h*Time.deltaTime, 0,ForceMode.Acceleration);
+	}
+
+	public void DisableRobot(string robot){
+		if (name == robot) {
+			disabled = true;
+				}
 	}
 }
