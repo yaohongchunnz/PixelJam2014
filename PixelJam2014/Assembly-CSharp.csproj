@@ -51,6 +51,9 @@
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\Proximity.cs" />
+     <Compile Include="Assets\Scripts\RobotHealthBar.cs" />
+     <Compile Include="Assets\Scripts\TopController.cs" />
      <None Include="Assets\Shaders\Underwater.shader" />
      <None Include="Assets\Standard Assets\Water (Pro Only)\Water4\Sources\Shaders\FX-SimpleWater4.shader" />
      <None Include="Assets\Shaders\WaterShader_2.shader" />

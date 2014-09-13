@@ -1,11 +1,13 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp-firstpass-vs.csproj", "{21C72429-F1C2-AF76-BC6C-DA9587876944}"
+Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp-firstpass.csproj", "{21C72429-F1C2-AF76-BC6C-DA9587876944}"
 EndProject
-Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp-vs.csproj", "{E2B231CC-B563-B8F3-AA17-4BB3D259C727}"
+Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp.csproj", "{E2B231CC-B563-B8F3-AA17-4BB3D259C727}"
 EndProject
-Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp-Editor-vs.csproj", "{A80C7D39-4311-D70E-6A0C-7870DC0CFEA7}"
+Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CSharp-Editor.csproj", "{A80C7D39-4311-D70E-6A0C-7870DC0CFEA7}"
+EndProject
+Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-UnityScript-firstpass.unityproj", "{EF703943-86FA-B471-2A59-649F42AE2318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,11 +27,19 @@ Global
 		{A80C7D39-4311-D70E-6A0C-7870DC0CFEA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A80C7D39-4311-D70E-6A0C-7870DC0CFEA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A80C7D39-4311-D70E-6A0C-7870DC0CFEA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF703943-86FA-B471-2A59-649F42AE2318}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF703943-86FA-B471-2A59-649F42AE2318}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF703943-86FA-B471-2A59-649F42AE2318}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF703943-86FA-B471-2A59-649F42AE2318}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																					GlobalSection(MonoDevelopProperties) = preSolution
+<<<<<<< HEAD
+																	GlobalSection(MonoDevelopProperties) = preSolution
+=======
+																			GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> 5581562ced1fd54d194cbff78c21923ed523f3e8
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
