@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\BuildingDestroy.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
+     <Compile Include="Assets\Scripts\IgnoreCollision.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\RobotHealthBar.cs" />
      <Compile Include="Assets\Scripts\TopController.cs" />

@@ -23,6 +23,7 @@ public class BottomControls : MonoBehaviour {
 
 		gameObject.AddComponent<Rigidbody> ();
 		rigidbody.drag = 1f;
+		rigidbody.mass = 1000f;
 		rigidbody.angularDrag = 1f;
 		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 

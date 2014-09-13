@@ -3,6 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TopController.cs">
     <Files>
       <File FileName="Assets\Scripts\TopController.cs" Line="18" Column="16" />
+      <File FileName="Assets\Scripts\TopController.cs" Line="35" Column="1" />
+      <File FileName="Assets\Scripts\Compass.cs" Line="14" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
