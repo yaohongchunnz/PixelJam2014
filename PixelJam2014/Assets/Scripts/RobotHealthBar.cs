@@ -18,6 +18,9 @@ public class RobotHealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		healthBar.transform.localScale = new Vector3 (0, robotHealth.GetPercentHealth () * 2f, 1);
+		float y = robotHealth.GetPercentHealth () * 2f;
+		if (y <= 0)
+						y = 0;
+		healthBar.transform.localScale = new Vector3 (0, y, 1);
 	}
 }
