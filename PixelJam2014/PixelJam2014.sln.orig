@@ -9,6 +9,8 @@ Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-CS
 EndProject
 Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-UnityScript-firstpass.unityproj", "{EF703943-86FA-B471-2A59-649F42AE2318}"
 EndProject
+Project("{C775055A-3AE9-4B7D-BE1B-FDFFC5B4DDED}") = "PixelJam2014", "Assembly-UnityScript.unityproj", "{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,15 +33,19 @@ Global
 		{EF703943-86FA-B471-2A59-649F42AE2318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF703943-86FA-B471-2A59-649F42AE2318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF703943-86FA-B471-2A59-649F42AE2318}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4239A41-4D25-FB79-D0F0-B3AFC51F2287}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 <<<<<<< HEAD
-																	GlobalSection(MonoDevelopProperties) = preSolution
+																						GlobalSection(MonoDevelopProperties) = preSolution
 =======
-																			GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 5581562ced1fd54d194cbff78c21923ed523f3e8
+																							GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> a47527d04d7bdca06184ee056fd637d3e39d2fdd
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
