@@ -52,12 +52,14 @@
      <Compile Include="Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
      <Compile Include="Assets\Scripts\BottomPlayerScripts\BottomControls.cs" />
      <Compile Include="Assets\Scripts\BottomPlayerScripts\Health.cs" />
-     <Compile Include="Assets\Scripts\BottomPlayerScripts\Proximity.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\IgnoreCollision.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Scripts\MoveBackBase.cs" />
+     <Compile Include="Assets\Scripts\Proximity.cs" />
      <Compile Include="Assets\Scripts\RobotHealthBar.cs" />
+     <Compile Include="Assets\Scripts\SimpleMovement.cs" />
      <Compile Include="Assets\Scripts\TopController.cs" />
      <Compile Include="Assets\SimpleParticlePack\Scripts\ParticleTester.cs" />
      <None Include="Assets\JMO Assets\MatCap Shaders\Shaders\MatCap_TextureAdd_Bumped.shader" />
