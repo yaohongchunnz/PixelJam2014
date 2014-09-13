@@ -54,6 +54,7 @@
      <Compile Include="Assets\Scripts\BottomPlayerScripts\Health.cs" />
      <Compile Include="Assets\Scripts\BottomPlayerScripts\Proximity.cs" />
      <Compile Include="Assets\Scripts\BuildingDestroy.cs" />
+     <Compile Include="Assets\Scripts\BuildingDestroyMedium.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\IgnoreCollision.cs" />

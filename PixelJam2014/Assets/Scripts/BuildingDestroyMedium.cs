@@ -2,8 +2,9 @@
 using System.Collections;
 
 
-public class BuildingDestroy : MonoBehaviour {
+public class BuildingDestroyMedium : MonoBehaviour {
 	public GameObject myParticle1;
+	public GameObject myParticle2;
 	public GameObject newParticleEmmiter;
 	public GameObject rubble;
 	private bool falling = false;
@@ -42,9 +43,10 @@ public class BuildingDestroy : MonoBehaviour {
 	void blowUp (){
 		GameObject newParticle =  Instantiate(newParticleEmmiter, transform.position, transform.rotation) as GameObject;
 		GameObject newRubble =  Instantiate(rubble, transform.position, transform.rotation) as GameObject;
-		Destroy (newParticle,10f);
+		Destroy (newParticle,15f);
 		newParticle.particleSystem.Play(true);
 		myParticle1.particleSystem.Play(true);
+		myParticle2.particleSystem.Play(true);
 
 		this.falling = true;
 	}
