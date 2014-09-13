@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.playSound("handStep", "left")
+		this.playSound("handStep", "left");
 	
 	}
 	
@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour {
 
 		var track = Random.Range(1, types);
 		var soundToPlay = sound + track.ToString();
-		var clipToPlay;
+		AudioClip clipToPlay = null;
 		switch (soundToPlay){
 		case "handStep1":
 			clipToPlay = handStep1;
@@ -32,6 +32,10 @@ public class AudioManager : MonoBehaviour {
 			clipToPlay = handStep2;
 		     break;
 	     
+		}
+		if(clipToPlay == null) {
+			print ("Audio clip was not passed correctly to the Audio Manager");
+			return;
 		}
 		if(side.ToLower() == "right"){
 			rightSource.PlayOneShot(clipToPlay);
