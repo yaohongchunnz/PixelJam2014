@@ -15,7 +15,7 @@ public class BuildingDestroy : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.blowUp ();
+		//this.blowUp ();
 		
 	
 	}
