@@ -1,19 +1,20 @@
 ﻿<Properties>
-<<<<<<< HEAD
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench />
-=======
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\TopController.cs">
     <Files>
+<<<<<<< HEAD
+      <File FileName="Assets\Scripts\TopController.cs" Line="18" Column="16" />
+=======
       <File FileName="Assets\Scripts\Controls.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TopController.cs" Line="37" Column="3" />
-      <File FileName="Assets\Scripts\Compass.cs" Line="33" Column="36" />
-      <File FileName="Assets\Scripts\RobotHealthBar.cs" Line="27" Column="1" />
+      <File FileName="Assets\Scripts\TopController.cs" Line="35" Column="1" />
+      <File FileName="Assets\Scripts\Compass.cs" Line="14" Column="41" />
+      <File FileName="Assets\Scripts\RobotHealthBar.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\BottomControls.cs" Line="104" Column="28" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\Health.cs" Line="46" Column="1" />
+>>>>>>> d1a3beb8f983bfd04ba6e0b18818245cf2e0ca2d
     </Files>
   </MonoDevelop.Ide.Workbench>
->>>>>>> 5d8019f67493dfc6e8ca6eb4ecaeaaeac78c98ca
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
