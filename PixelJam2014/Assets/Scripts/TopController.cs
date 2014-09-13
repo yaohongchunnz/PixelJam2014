@@ -8,6 +8,7 @@ public class TopController : MonoBehaviour {
 	public float angle;
 	public float turnSpeed = 50f;
 	public Animator anim;
+	public bool attached = false;
 
 	// Use this for initialization
 	void Start () {
@@ -36,16 +37,24 @@ public class TopController : MonoBehaviour {
 			anim.SetBool("RightBlock",false);			
 		}
 		punchingFists = Input.GetAxisRaw ("T" + playerNumber.ToString ());
-		if (punchingFists == 1) {
-						anim.SetBool ("LeftAttack", true);			
-				} else if (punchingFists == -1) {
-						anim.SetBool ("RightAttack", true);
-				} else {
-			
-			anim.SetBool ("LeftAttack", false);
-			anim.SetBool ("RightAttack", false);
-				}
+		if (previous != punchingFists) {
+			if (punchingFists == 1) {
+				anim.SetBool ("LeftAttack", true);			
+			} else if (punchingFists == -1) {
+				anim.SetBool ("RightAttack", true);
+			} else {
+				
+				anim.SetBool ("LeftAttack", false);
+				anim.SetBool ("RightAttack", false);
+			}
 
+				}
+		
+		if (!attached) {
+			if(Input.GetButtonDown ("A"+playerNumber.ToString())){
+				
+			}
+		}
 
 	}
 	
@@ -61,6 +70,7 @@ public class TopController : MonoBehaviour {
 
 		// rotation
 		transform.RotateAround(pivotpoint.transform.position, Vector3.up, turnSpeed * h * Time.deltaTime);
+
 	}
 	
 	public void DisableRobot(){
