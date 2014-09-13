@@ -5,7 +5,9 @@ public class Health : MonoBehaviour {
 
 	public float currentHealth;
 	public float maxHealth;
+	public float damageReductionPercent; // goes from 0-1. 1 being 100% damage reduction
 	public bool dead = false;
+	public bool vulnerable=true;
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
@@ -23,7 +25,8 @@ public class Health : MonoBehaviour {
 		if(!dead)
 		if (collision.relativeVelocity.magnitude > 2) {
 			print (collision.relativeVelocity.magnitude);
-			currentHealth-=collision.relativeVelocity.magnitude;
+
+			currentHealth-=(collision.relativeVelocity.magnitude*(1-damageReductionPercent));
 			dead = currentHealth <=0;
 			if(dead)Die ();
 		}
