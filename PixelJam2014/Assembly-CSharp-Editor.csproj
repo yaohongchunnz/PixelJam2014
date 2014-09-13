@@ -78,11 +78,11 @@
      <None Include="Assets\JMO Assets\MatCap Shaders\Textures\BenSimonds\_Textures Readme.txt" />
      <None Include="Assets\JMO Assets\MatCap Shaders\_MatCap Shaders Readme.txt" />
      <None Include="Assets\Shaders\alpha_2sided.shader" />
- <Reference Include="UnityEditor.Graphs">
- <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
  <Reference Include="JMOAssets">
  <HintPath>F:/code/PixelJam2014/PixelJam2014/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>

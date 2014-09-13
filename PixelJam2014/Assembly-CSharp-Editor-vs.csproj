@@ -84,11 +84,11 @@
  <Reference Include="Assembly-UnityScript">
  <HintPath>F:/code/PixelJam2014/PixelJam2014/Library/ScriptAssemblies/Assembly-UnityScript.dll</HintPath>
  </Reference>
- <Reference Include="UnityEditor.Graphs">
- <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
- </Reference>
  <Reference Include="JMOAssets">
  <HintPath>F:/code/PixelJam2014/PixelJam2014/Assets/JMO Assets/Editor/JMOAssets.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>F:/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
