@@ -10,6 +10,7 @@ public class MoveBackBase : MonoBehaviour {
 	public GameObject vulnerable;
 	public Health health;
 
+	public GameObject thrusters;
 	void Start(){
 		health = GetComponent<Health> ();
 	}
@@ -23,6 +24,7 @@ public class MoveBackBase : MonoBehaviour {
 
 	public void LaunchOff(){
 		animation.Stop ();
+		thrusters.particleSystem.Play (true);
 		transform.parent=null;
 		target = new Vector3 (transform.position.x, transform.position.y+1.5f, transform.position.z);
 		start = true;
@@ -34,7 +36,8 @@ public class MoveBackBase : MonoBehaviour {
 		//animation.CrossFade("Place");
 		//transform.position = target;
 		target = new Vector3 (target.x, .9f, target.z);
-		yield return new WaitForSeconds(4f);
+		yield return new WaitForSeconds(1f);
+		thrusters.particleSystem.Stop (true);
 		//animation.CrossFade("Place");
 	}
 
