@@ -132,6 +132,9 @@ public class BottomControls : MonoBehaviour {
 		if (h < 0.1f && h > -0.1f) {
 			h=0f;
 		}
+		if (v < 0.1f && v > -0.1f) {
+			v=0f;
+		}
 		h *= 2f;
 
 		if (rightBoost) {
@@ -202,7 +205,6 @@ public class BottomControls : MonoBehaviour {
 		print ("Checking...!");
 		if (caller.Contains ("Player" + (playerNumber - 1).ToString ())) {
 			if(carryingBase){
-				myBase.transform.parent=null;
 				myBase.BroadcastMessage("LaunchOff");
 				carryingBase=false;
 			print ("Combined!");

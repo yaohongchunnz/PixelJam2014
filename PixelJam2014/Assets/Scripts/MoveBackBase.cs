@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MoveBackBase : MonoBehaviour {
 
-	Vector3 target;
+	public Vector3 target;
 	bool start = false;
 	// Update is called once per frame
 	void Update () {
@@ -15,13 +15,13 @@ public class MoveBackBase : MonoBehaviour {
 	public void LaunchOff(){
 		animation.Stop ();
 		transform.parent=null;
-		target = new Vector3 (transform.position.x, transform.position.y, transform.position.z - 1);
+		target = new Vector3 (transform.position.x, transform.position.y+2, transform.position.z);
 		start = true;
 		StartCoroutine (Land ());
 	}
 
 	public IEnumerator Land(){
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(10f);
 		animation.CrossFade("Place");
 		transform.position = target;
 	}
