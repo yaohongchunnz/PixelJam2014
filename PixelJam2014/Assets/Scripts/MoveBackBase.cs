@@ -13,14 +13,16 @@ public class MoveBackBase : MonoBehaviour {
 	public GameObject thrusters;
 
 	public GameObject bigbang;
+	public AudioManager audioManager;
 	void Start(){
 		health = GetComponent<Health> ();
+		audioManager = GameObject.FindGameObjectWithTag ("Sound").GetComponent<AudioManager> ();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		if (start) {
-			transform.position = Vector3.Lerp(transform.position,target,Time.deltaTime*2);
+			transform.position = Vector3.Lerp(transform.position,target,Time.deltaTime*4);
 		}
 	}
 
@@ -43,7 +45,7 @@ public class MoveBackBase : MonoBehaviour {
 		health.damageReductionPercent = 1;
 		
 		gameObject.AddComponent<Rigidbody> ();
-		rigidbody.isKinematic = true;
+		rigidbody.isKinematic = false;
 		rigidbody.useGravity = false;
 		rigidbody.drag = 1f;
 		rigidbody.mass = 1000f;
@@ -62,6 +64,7 @@ public class MoveBackBase : MonoBehaviour {
 	public void ExplodeBase(){
 		bigbang.particleSystem.Play (true);
 		
+		audioManager.playSound ("baseDeathExplosion", 1);
 		Vector3 explosionPos = transform.position;
 		Collider[] colliders = Physics.OverlapSphere(explosionPos, 23);
 		foreach (Collider hit in colliders) {
@@ -71,5 +74,14 @@ public class MoveBackBase : MonoBehaviour {
 			}
 			
 		}
+
+		// lose
+		string team = "";
+		if (tag == "LeftBase") {
+						team = "RED TEAM";
+		} else {
+			team = "BLUE TEAM";
+		}
+		GameObject.Find ("AllText").guiText.text = team + " WINS!";
 	}
 }
