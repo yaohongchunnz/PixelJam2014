@@ -20,6 +20,8 @@ public class SimpleMovement : MonoBehaviour
 	public GameObject connectionPoint;
 
 	public GameObject thrusters;
+
+	public GameObject boom;
 	void Awake ()
 	{
 		// Setting up the references.
@@ -32,7 +34,7 @@ public class SimpleMovement : MonoBehaviour
 	void FixedUpdate ()
 	{
 		if (connecting) {
-			transform.position = Vector3.Lerp(transform.position,topPoint.transform.position,Time.deltaTime*2);
+			transform.position = Vector3.Lerp(transform.position,topPoint.transform.position,Time.deltaTime*4);
 			transform.rotation = Quaternion.Slerp(transform.rotation, topPoint.transform.rotation,Time.deltaTime*2);
 		}
 
@@ -50,10 +52,10 @@ public class SimpleMovement : MonoBehaviour
 
 
 
-		if (h < 0.1f && h > -0.1f) {
+		if (h < 0.2f && h > -0.2f) {
 			h=0f;
 				}
-		else if(v < 0.1f && v > -0.1f) {
+		else if(v < 0.2f && v > -0.2f) {
 			v=0f;
 		}
 
@@ -82,7 +84,7 @@ public class SimpleMovement : MonoBehaviour
 	}
 	
 	IEnumerator Fall() {				
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(0.9f);
 		connecting = false;
 		falling = true;
 		thrusters.particleSystem.Stop (true);
@@ -91,9 +93,19 @@ public class SimpleMovement : MonoBehaviour
 
 		Destroy (this.gameObject);
 	}
-	
+
+	public void DisableRobot(){
+		boom.particleSystem.Play (true);
+		disabled = true;
+	}
+
 	void Update ()
 	{
+
+	}
+
+	void PlaySound(string s){
+		// up or stomp
 
 	}
 	

@@ -109,28 +109,28 @@ ModelImporter:
       curves: []
       events:
       - time: .547435343
-        functionName: 
+        functionName: PlaySound
         data: Stomp
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: .981391072
-        functionName: NewEvent
+        functionName: PlaySound
         data: Stomp
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: .0950069278
-        functionName: NewEvent
+        functionName: PlaySound
         data: Up
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
       - time: .629745543
-        functionName: NewEvent
+        functionName: PlaySound
         data: Up
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

@@ -11,6 +11,8 @@ public class MoveBackBase : MonoBehaviour {
 	public Health health;
 
 	public GameObject thrusters;
+
+	public GameObject bigbang;
 	void Start(){
 		health = GetComponent<Health> ();
 	}
@@ -19,25 +21,35 @@ public class MoveBackBase : MonoBehaviour {
 	void Update () {
 		if (start) {
 			transform.position = Vector3.Lerp(transform.position,target,Time.deltaTime*2);
-				}
+		}
 	}
 
 	public void LaunchOff(){
 		animation.Stop ();
 		thrusters.particleSystem.Play (true);
 		transform.parent=null;
-		target = new Vector3 (transform.position.x, transform.position.y+1.5f, transform.position.z);
+		target = new Vector3 (transform.position.x, transform.position.y+2f, transform.position.z-3f);
 		start = true;
 		StartCoroutine (Land ());
 	}
 
 	public IEnumerator Land(){
-		yield return new WaitForSeconds(5f);
+		yield return new WaitForSeconds(2f);
 		//animation.CrossFade("Place");
 		//transform.position = target;
 		target = new Vector3 (target.x, .9f, target.z);
 		yield return new WaitForSeconds(1f);
-		thrusters.particleSystem.Stop (true);
+		shield.particleSystem.Play (true);
+		health.damageReductionPercent = 1;
+		
+		gameObject.AddComponent<Rigidbody> ();
+		rigidbody.isKinematic = true;
+		rigidbody.useGravity = false;
+		rigidbody.drag = 1f;
+		rigidbody.mass = 1000f;
+		rigidbody.angularDrag = 1f;
+		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		//thrusters.particleSystem.Stop (true);
 		//animation.CrossFade("Place");
 	}
 
@@ -45,5 +57,9 @@ public class MoveBackBase : MonoBehaviour {
 		shield.particleSystem.Stop (true);
 		vulnerable.particleSystem.Play (true);
 		health.damageReductionPercent = 0.2f;
+	}
+
+	public void ExplodeBase(){
+		bigbang.particleSystem.Play (true);
 	}
 }

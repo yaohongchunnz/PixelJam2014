@@ -57,6 +57,7 @@
      <Compile Include="Assets\Scripts\BuildingDestroyMedium.cs" />
      <Compile Include="Assets\Scripts\Compass.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
+     <Compile Include="Assets\Scripts\FistsOfFury.cs" />
      <Compile Include="Assets\Scripts\IgnoreCollision.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MoveBackBase.cs" />

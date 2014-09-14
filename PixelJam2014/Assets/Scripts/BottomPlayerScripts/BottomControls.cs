@@ -16,6 +16,7 @@ public class BottomControls : MonoBehaviour {
 
 	public GameObject myGUI;
 
+	public GameObject boom;
 	// Use this for initialization
 	void Start () {
 		if (playerNumber != 2 && playerNumber != 4) {
@@ -163,7 +164,13 @@ public class BottomControls : MonoBehaviour {
 //			}
 //		}
 		Move ();
-
+		
+		//animation
+		if (v != 0 || h != 0) {
+			PlayWheels ();
+		} else {
+			StopWheels();
+		}
 	}
 
 	void Move ()
@@ -194,12 +201,33 @@ public class BottomControls : MonoBehaviour {
 		Quaternion deltaRotation = Quaternion.Euler (turnVelocity );
 		//rigidbody.rot(transform.up*turnSpeed*h, ForceMode.Acceleration);
 		rigidbody.MoveRotation (rigidbody.rotation * deltaRotation);
+
+
 		//rigidbody.AddTorque (0, turnSpeed * h*Time.deltaTime, 0,ForceMode.Acceleration);
 	}
 
+	public void PlayWheels(){
+		GameObject[] wheels = GameObject.FindGameObjectsWithTag ("Player" + playerNumber.ToString () + "Wheels");
+		for (int i = 0; i < wheels.Length; i++) {
+			wheels[i].animation.CrossFade("WheelSpin");
+		}
+	}
+
+	public void StopWheels(){
+		GameObject[] wheels = GameObject.FindGameObjectsWithTag ("Player" + playerNumber.ToString () + "Wheels");
+		for (int i = 0; i < wheels.Length; i++) {
+			wheels[i].animation.Stop();
+		}
+	}
 	public void DisableRobot(){
 			disabled = true;
 		print (name + " died");
+		boom.particleSystem.Play (true);
+		if (carryingBase) {
+						myBase.GetComponent<MoveBackBase> ().ExplodeBase ();
+				} else {
+			myBase.GetComponent<MoveBackBase>().Vulnerable();
+				}
 	}
 
 	public void Combine(string caller){
@@ -220,6 +248,7 @@ public class BottomControls : MonoBehaviour {
 
 		top.SetActive (true);
 		GameObject gui = Instantiate (myGUI) as GameObject;
-
+		GetComponent<Health> ().IncreaseHealth (50);
+		GetComponent<Health> ().damageReductionPercent = 0.2f;
 	}
 }
