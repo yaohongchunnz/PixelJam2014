@@ -59,7 +59,9 @@
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\FistsOfFury.cs" />
      <Compile Include="Assets\Scripts\GUIIndividualHealth.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\IgnoreCollision.cs" />
+     <Compile Include="Assets\Scripts\LoadGame.cs" />
      <Compile Include="Assets\Scripts\Menu.cs" />
      <Compile Include="Assets\Scripts\MoveBackBase.cs" />
      <Compile Include="Assets\Scripts\Proximity.cs" />

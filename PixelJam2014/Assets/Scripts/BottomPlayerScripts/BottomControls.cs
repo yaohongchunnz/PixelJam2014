@@ -17,6 +17,7 @@ public class BottomControls : MonoBehaviour {
 	public GameObject myGUI;
 
 	public GameObject boom;
+	public AudioManager audioManager;
 	// Use this for initialization
 	void Start () {
 		if (playerNumber != 2 && playerNumber != 4) {
@@ -36,6 +37,7 @@ public class BottomControls : MonoBehaviour {
 		rigidbody.angularDrag = 1f;
 		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
 		StartCoroutine (FreezeY());
+		audioManager = GameObject.FindGameObjectWithTag ("Sound").GetComponent<AudioManager> ();
 
 	}
 
@@ -226,24 +228,28 @@ public class BottomControls : MonoBehaviour {
 		}
 	}
 	public void DisableRobot(){
-			disabled = true;
+		disabled = true;
 		print (name + " died");
 		boom.particleSystem.Play (true);
+		int explodeRadius = 0;
 		if (carryingBase) {
 						myBase.GetComponent<MoveBackBase> ().ExplodeBase ();
+			explodeRadius = 25;
 				} else {
+			explodeRadius = 4;
 			myBase.GetComponent<MoveBackBase>().Vulnerable();
+			audioManager.playSound ("borgDeathExplosion", playerNumber);
 				}
 
 		Vector3 explosionPos = transform.position;
-		Collider[] colliders = Physics.OverlapSphere(explosionPos, 7);
+		Collider[] colliders = Physics.OverlapSphere(explosionPos, explodeRadius);
 		foreach (Collider hit in colliders) {
 			if (hit && hit.gameObject.tag=="Building")
 			{
 				hit.gameObject.BroadcastMessage("blowUp");
 			}
-			
 		}
+		//Destroy (this.gameObject);
 	}
 
 	public void Combine(string caller){
@@ -254,6 +260,7 @@ public class BottomControls : MonoBehaviour {
 				carryingBase=false;
 				print ("Combined!");
 				rigidbody.mass = 2000f;
+
 			}
 
 				} else {

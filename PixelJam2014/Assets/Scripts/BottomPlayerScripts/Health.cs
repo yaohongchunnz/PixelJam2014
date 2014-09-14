@@ -23,7 +23,7 @@ public class Health : MonoBehaviour {
 		if(!dead)
 		if (collision.relativeVelocity.magnitude > 2) {
 			print (collision.relativeVelocity.magnitude);
-			Damage (collision.relativeVelocity.magnitude);
+			Damage (collision.relativeVelocity.magnitude/5f);
 		}
 		
 	}

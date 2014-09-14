@@ -10,7 +10,7 @@ public class Proximity : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (other.name == "Player" + lookingFor.ToString ()) {
-			isInRange = true;
+			isInRange = true;			
 			GameObject.Find ("PressA"+(lookingFor-1).ToString()).guiText.text="Press A Now!";
 		}
 	}

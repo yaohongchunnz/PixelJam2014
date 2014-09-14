@@ -19,10 +19,8 @@ public class AudioManager : MonoBehaviour {
 	public AudioClip pelvisThrustStart;
 	public AudioClip punchHit;
 	public AudioClip throwPunch;
-	public AudioClip torsoWalk1;
-	public AudioClip torsoWalk1alt;
-	public AudioClip torsoWalk2;
-	public AudioClip torsoWalk2alt;
+	public AudioClip torsoWalkUp;
+	public AudioClip torsoWalkDown;
 
 	// Use this for initialization
 	void Start () {
@@ -34,19 +32,19 @@ public class AudioManager : MonoBehaviour {
 	void Update () {
 	
 	}
-	void playSound(string sound, int playerNumber, int types = 1, float delay = 0f){
+	public void playSound(string sound, int playerNumber, int types = 1, float delay = 0f){
 
 		var track = Random.Range(1, types);
 		var soundToPlay = sound + track.ToString();
 		AudioClip clipToPlay = null;
 		switch (soundToPlay){
-		case "baseDeathExplosion":
+		case "baseDeathExplosion1":
 			clipToPlay = baseDeathExplosion;
 			break;
-		case "borgDeathExplosion":
+		case "borgDeathExplosion1":
 			clipToPlay = borgDeathExplosion;
 		     break;
-		case "combineNoise":
+		case "combineNoise1":
 			clipToPlay = combineNoise;
 			break;
 		case "pelvisAccelerating":
@@ -78,18 +76,12 @@ public class AudioManager : MonoBehaviour {
 		case "throwPunch":
 			clipToPlay = throwPunch;
 			break;
-
-		case "torsoWalk1":
-			clipToPlay = torsoWalk1;
+			
+		case "torsoWalkUp1":
+			clipToPlay = torsoWalkUp;
 			break;
-		case "torsoWalk1alt":
-			clipToPlay = torsoWalk1alt;
-			break;
-		case "torsoWalk2":
-			clipToPlay = torsoWalk2;
-			break;
-		case "torsoWalk2alt":
-			clipToPlay = torsoWalk2alt;
+		case "torsoWalkDown1":
+			clipToPlay = torsoWalkDown;
 			break;
 
 

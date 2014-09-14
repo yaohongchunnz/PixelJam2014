@@ -22,11 +22,14 @@ public class SimpleMovement : MonoBehaviour
 	public GameObject thrusters;
 
 	public GameObject boom;
+
+	public AudioManager audioManager;
 	void Awake ()
 	{
 		// Setting up the references.
 		anim = GetComponent<Animator>();
 		proximity = GetComponent<Proximity> ();
+		audioManager = GameObject.FindGameObjectWithTag ("Sound").GetComponent<AudioManager> ();
 	}
 	
 	public float h;
@@ -80,6 +83,8 @@ public class SimpleMovement : MonoBehaviour
 			// play particles & sound
 			thrusters.particleSystem.Play(true);
 			print ("combining!!");
+			audioManager.playSound("combineNoise",playerNumber);
+			Destroy(GameObject.Find ("PressA"+playerNumber.ToString()));
 		}
 	}
 	
@@ -97,6 +102,7 @@ public class SimpleMovement : MonoBehaviour
 	public void DisableRobot(){
 		boom.particleSystem.Play (true);
 		disabled = true;
+		audioManager.playSound ("borgDeathExplosion", playerNumber);
 		
 		Vector3 explosionPos = transform.position;
 		Collider[] colliders = Physics.OverlapSphere(explosionPos, 5);
@@ -104,10 +110,12 @@ public class SimpleMovement : MonoBehaviour
 			if (hit && hit.gameObject.tag=="Building")
 			{
 				hit.gameObject.BroadcastMessage("blowUp");
-			}
-			
+			}			
 		}
+		//GameObject.Find ("GameManager").GetComponent<GameManager> ().Spawn(this.gameObject);
+		Destroy (gameObject,10f);
 	}
+
 
 	void Update ()
 	{
@@ -116,7 +124,12 @@ public class SimpleMovement : MonoBehaviour
 
 	void PlaySound(string s){
 		// up or stomp
-
+		if(s.ToLower() == "up")
+		audioManager.playSound ("torsoWalkUp", playerNumber);
+		if (s.ToLower () == "stomp") {
+			audioManager.playSound ("torsoWalkDown", playerNumber);
+				}
+			
 	}
 	
 
