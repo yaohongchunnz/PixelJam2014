@@ -11,7 +11,7 @@ public class AudioManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.playSound("handStep", "left");
+		//this.playSound("handStep", "left");
 	
 	}
 	

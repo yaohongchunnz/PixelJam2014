@@ -32,10 +32,16 @@ public class BottomControls : MonoBehaviour {
 
 		gameObject.AddComponent<Rigidbody> ();
 		rigidbody.drag = 1f;
-		rigidbody.mass = 1000f;
+		rigidbody.mass = 100f;
 		rigidbody.angularDrag = 1f;
 		rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
+		StartCoroutine (FreezeY());
 
+	}
+
+	IEnumerator FreezeY(){
+		yield return new WaitForSeconds(1f);
+		//rigidbody.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
 	}
 
 	private float previous = 0;
@@ -228,6 +234,16 @@ public class BottomControls : MonoBehaviour {
 				} else {
 			myBase.GetComponent<MoveBackBase>().Vulnerable();
 				}
+
+		Vector3 explosionPos = transform.position;
+		Collider[] colliders = Physics.OverlapSphere(explosionPos, 7);
+		foreach (Collider hit in colliders) {
+			if (hit && hit.gameObject.tag=="Building")
+			{
+				hit.gameObject.BroadcastMessage("blowUp");
+			}
+			
+		}
 	}
 
 	public void Combine(string caller){
