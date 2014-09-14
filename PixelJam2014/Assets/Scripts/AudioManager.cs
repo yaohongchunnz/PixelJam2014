@@ -6,12 +6,27 @@ public class AudioManager : MonoBehaviour {
 	public AudioSource rightSource;
 
 
-	public AudioClip handStep1;
-	public AudioClip handStep2;
+	public AudioClip baseDeathExplosion;
+	public AudioClip borgDeathExplosion;
+	public AudioClip combineNoise;
+	public AudioClip getHit;
+	public AudioClip pelvisAccelerating;
+	public AudioClip pelvisIdle;
+	public AudioClip pelvisMove;
+	public AudioClip pelvisStop;
+	public AudioClip pelvisThrustEnd;
+	public AudioClip pelvisThrustHold;
+	public AudioClip pelvisThrustStart;
+	public AudioClip punchHit;
+	public AudioClip throwPunch;
+	public AudioClip torsoWalk1;
+	public AudioClip torsoWalk1alt;
+	public AudioClip torsoWalk2;
+	public AudioClip torsoWalk2alt;
 
 	// Use this for initialization
 	void Start () {
-		this.playSound("handStep", "left");
+		//this.playSound("handStep", "left");
 	
 	}
 	
@@ -25,12 +40,59 @@ public class AudioManager : MonoBehaviour {
 		var soundToPlay = sound + track.ToString();
 		AudioClip clipToPlay = null;
 		switch (soundToPlay){
-		case "handStep1":
-			clipToPlay = handStep1;
+		case "baseDeathExplosion":
+			clipToPlay = baseDeathExplosion;
 			break;
-		case "handStep2":
-			clipToPlay = handStep2;
+		case "borgDeathExplosion":
+			clipToPlay = borgDeathExplosion;
 		     break;
+		case "combineNoise":
+			clipToPlay = combineNoise;
+			break;
+		case "pelvisAccelerating":
+			clipToPlay = pelvisAccelerating;
+			break;
+		case "pelvisIdle":
+			clipToPlay = pelvisIdle;
+			break;
+		case "pelvisMove":
+			clipToPlay = pelvisMove;
+			break;
+		case "pelvisStop":
+			clipToPlay = pelvisStop;
+			break;
+		case "pelvisThrustEnd":
+			clipToPlay = pelvisThrustEnd;
+			break;
+		case "pelvisThrustHold":
+			clipToPlay = pelvisThrustHold;
+			break;
+		case "pelvisThrustStart":
+			clipToPlay = pelvisThrustStart;
+			break;
+
+		case "punchHit":
+			clipToPlay = punchHit;
+			break;
+
+		case "throwPunch":
+			clipToPlay = throwPunch;
+			break;
+
+		case "torsoWalk1":
+			clipToPlay = torsoWalk1;
+			break;
+		case "torsoWalk1alt":
+			clipToPlay = torsoWalk1alt;
+			break;
+		case "torsoWalk2":
+			clipToPlay = torsoWalk2;
+			break;
+		case "torsoWalk2alt":
+			clipToPlay = torsoWalk2alt;
+			break;
+
+
 	     
 		}
 		if(clipToPlay == null) {
