@@ -7,7 +7,6 @@ public class Health : MonoBehaviour {
 	public float maxHealth;
 	public float damageReductionPercent; // goes from 0-1. 1 being 100% damage reduction
 	public bool dead = false;
-	public bool vulnerable=true;
 	// Use this for initialization
 	void Start () {
 		currentHealth = maxHealth;
@@ -25,10 +24,7 @@ public class Health : MonoBehaviour {
 		if(!dead)
 		if (collision.relativeVelocity.magnitude > 2) {
 			print (collision.relativeVelocity.magnitude);
-
-			currentHealth-=(collision.relativeVelocity.magnitude*(1-damageReductionPercent));
-			dead = currentHealth <=0;
-			if(dead)Die ();
+			Damage (collision.relativeVelocity.magnitude);
 		}
 		
 	}
@@ -46,8 +42,35 @@ public class Health : MonoBehaviour {
 			top = "Player3";
 				}
 		if (top != "") {
-			GameObject.Find (top).GetComponent<TopController>().DisableRobot();
 			GetComponent<BottomControls>().DisableRobot();
+			if(GameObject.Find(top)!=null)
+			GameObject.Find (top).GetComponent<TopController>().DisableRobot();
 		}
+		if (tag == "DetachedTop1") {
+			GameObject.FindGameObjectWithTag("DetachedTop1").BroadcastMessage("DisableRobot");
+		} else if (tag == "DetachedTop3") {
+			GameObject.FindGameObjectWithTag("DetachedTop3").BroadcastMessage("DisableRobot");
+		}
+		
+		if (tag == "LeftBase") {
+			GameObject.FindGameObjectWithTag("LeftBase").BroadcastMessage("ExplodeBase");
+		} else if (tag == "RightBase") {
+			GameObject.FindGameObjectWithTag("RightBase").BroadcastMessage("ExplodeBase");
+		}
+
+
+	}
+
+	public void IncreaseHealth(float amount){
+		currentHealth += amount;
+		maxHealth += amount;
+	}
+	public void Damage(float damage){
+		currentHealth-=(damage*(1-damageReductionPercent));
+		if (!dead) {
+						dead = currentHealth <= 0;
+						if (dead)
+								Die ();
+				}
 	}
 }
