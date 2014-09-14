@@ -44,8 +44,8 @@ Global
 <<<<<<< HEAD
 																																													GlobalSection(MonoDevelopProperties) = preSolution
 =======
-																																								GlobalSection(MonoDevelopProperties) = preSolution
->>>>>>> 1a7c882e0b0b031bca7213876c2206e990d863a8
+																																												GlobalSection(MonoDevelopProperties) = preSolution
+>>>>>>> f87fde8858234ee7903a5b275dc4810db8c253e0
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

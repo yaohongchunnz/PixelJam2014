@@ -18,9 +18,8 @@ public class Health : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		foreach (ContactPoint contact in collision.contacts) {
-			Debug.DrawRay(contact.point, contact.normal, Color.white);
-		}
+		if (collision.gameObject.tag == "Ground")
+						return;
 		if(!dead)
 		if (collision.relativeVelocity.magnitude > 2) {
 			print (collision.relativeVelocity.magnitude);
@@ -58,7 +57,15 @@ public class Health : MonoBehaviour {
 			GameObject.FindGameObjectWithTag("RightBase").BroadcastMessage("ExplodeBase");
 		}
 
+		if (tag == "Building") {
+			BroadcastMessage("blowUp");
+		}
 
+
+	}
+
+	void OnTriggerEnter(Collider other){
+		print ("HERE");
 	}
 
 	public void IncreaseHealth(float amount){

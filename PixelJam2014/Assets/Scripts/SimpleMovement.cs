@@ -97,6 +97,16 @@ public class SimpleMovement : MonoBehaviour
 	public void DisableRobot(){
 		boom.particleSystem.Play (true);
 		disabled = true;
+		
+		Vector3 explosionPos = transform.position;
+		Collider[] colliders = Physics.OverlapSphere(explosionPos, 5);
+		foreach (Collider hit in colliders) {
+			if (hit && hit.gameObject.tag=="Building")
+			{
+				hit.gameObject.BroadcastMessage("blowUp");
+			}
+			
+		}
 	}
 
 	void Update ()

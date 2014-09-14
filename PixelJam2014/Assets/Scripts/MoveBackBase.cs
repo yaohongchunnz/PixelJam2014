@@ -61,5 +61,15 @@ public class MoveBackBase : MonoBehaviour {
 
 	public void ExplodeBase(){
 		bigbang.particleSystem.Play (true);
+		
+		Vector3 explosionPos = transform.position;
+		Collider[] colliders = Physics.OverlapSphere(explosionPos, 23);
+		foreach (Collider hit in colliders) {
+			if (hit && hit.gameObject.tag=="Building")
+			{
+				hit.gameObject.BroadcastMessage("blowUp");
+			}
+			
+		}
 	}
 }
