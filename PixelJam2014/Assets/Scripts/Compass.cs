@@ -34,7 +34,7 @@ public class Compass : MonoBehaviour {
 		if (angle < 180) {
 						normalized = ((angle / 179)/2f)+0.5f;
 				} else if (angle < 360) {
-			normalized = ((angle / 359))-0.5f;
+			normalized = Mathf.Abs(((angle / 359))-0.5f);
 
 		}
 		triangleTop.transform.position = new Vector3(normalized,0.5f,0);

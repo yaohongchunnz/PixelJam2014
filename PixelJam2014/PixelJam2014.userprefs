@@ -1,9 +1,20 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BuildingDestroy.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Proximity.cs">
     <Files>
-      <File FileName="Assets\Scripts\BuildingDestroy.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\Health.cs" Line="31" Column="2" />
+      <File FileName="Assets\Scripts\BottomPlayerScripts\BottomControls.cs" Line="237" Column="1" />
+      <File FileName="Assets\Scripts\TopController.cs" Line="77" Column="19" />
+      <File FileName="Assets\Scripts\Controls.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Menu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Compass.cs" Line="37" Column="48" />
+      <File FileName="Assets\Scripts\RobotHealthBar.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SimpleMovement.cs" Line="102" Column="63" />
+      <File FileName="Assets\Scripts\MoveBackBase.cs" Line="64" Column="3" />
+      <File FileName="Assets\Scripts\FistsOfFury.cs" Line="44" Column="12" />
       <File FileName="Assets\Scripts\IgnoreCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GUIIndividualHealth.cs" Line="21" Column="11" />
+      <File FileName="Assets\Scripts\Proximity.cs" Line="19" Column="22" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

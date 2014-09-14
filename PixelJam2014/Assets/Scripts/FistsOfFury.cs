@@ -27,7 +27,16 @@ public class FistsOfFury : MonoBehaviour {
 		if (anim.GetCurrentAnimatorStateInfo (1).nameHash == leftAttack) {
 			// LEFT
 			print ("damaging " + other.gameObject.name +"  with left");
-			other.gameObject.BroadcastMessage("Damage",damage,SendMessageOptions.DontRequireReceiver);
+			float calcDamage = damage;
+			if(animEnemy!=null){ // enemy is attached
+				if(animEnemy.GetCurrentAnimatorStateInfo(1).nameHash == leftBlock){
+					calcDamage -= 4;
+				}
+				if(animEnemy.GetCurrentAnimatorStateInfo(2).nameHash == rightBlock){
+					calcDamage -= 4;				
+				}
+			}
+			other.gameObject.BroadcastMessage("Damage",calcDamage,SendMessageOptions.DontRequireReceiver);
 		}
 //		print (anim.GetCurrentAnimatorStateInfo (1).nameHash + " : " + leftAttack);
 //		print (anim.GetCurrentAnimatorStateInfo (2).nameHash + " : " + rightAttack);
@@ -43,7 +52,7 @@ public class FistsOfFury : MonoBehaviour {
 					calcDamage -= 4;				
 				}
 			}
-			other.gameObject.BroadcastMessage("Damage",damage,SendMessageOptions.DontRequireReceiver);
+			other.gameObject.BroadcastMessage("Damage",calcDamage,SendMessageOptions.DontRequireReceiver);
 		}
 //		if (anim.GetBool ("LeftAttack") && !anim.GetBool ("RightAttack")) {
 //
