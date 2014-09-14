@@ -19,7 +19,7 @@ public class AudioManager : MonoBehaviour {
 	void Update () {
 	
 	}
-	void playSound(string sound, string side, int types = 1, float delay = 0f){
+	void playSound(string sound, int playerNumber, int types = 1, float delay = 0f){
 
 		var track = Random.Range(1, types);
 		var soundToPlay = sound + track.ToString();
@@ -37,7 +37,8 @@ public class AudioManager : MonoBehaviour {
 			print ("Audio clip was not passed correctly to the Audio Manager");
 			return;
 		}
-		if(side.ToLower() == "right"){
+
+		if(playerNumber==1 || playerNumber==2){
 			rightSource.PlayOneShot(clipToPlay);
 		} else {
 			leftSource.PlayOneShot(clipToPlay);
